@@ -7,7 +7,7 @@ public class BinarySearchTreeTest {
     public void it_should_create_an_empty_bst(){
         BinarySearchTree bst = new BinarySearchTree();
 
-        assertEquals(bst.getRoot(), null);
+        assertEquals(null, bst.getRoot());
     }
 
     @Test
@@ -16,7 +16,7 @@ public class BinarySearchTreeTest {
 
         bst.addElement(5);
 
-        assertEquals(bst.getRoot().getValue(), 5);
+        assertEquals(5, bst.getRoot().getValue());
     }
 
     @Test
@@ -26,7 +26,7 @@ public class BinarySearchTreeTest {
         bst.addElement(40);
         bst.addElement(25);
 
-        assertEquals(bst.getRoot().getLeft().getValue(), 25);
+        assertEquals(25, bst.getRoot().getLeft().getValue());
     }
 
     @Test
@@ -36,7 +36,7 @@ public class BinarySearchTreeTest {
         bst.addElement(40);
         bst.addElement(75);
 
-        assertEquals(bst.getRoot().getRight().getValue(), 75);
+        assertEquals(75, bst.getRoot().getRight().getValue());
     }
 
     @Test
@@ -47,7 +47,7 @@ public class BinarySearchTreeTest {
         bst.addElement(25);
         bst.addElement(15);
 
-        assertEquals(bst.getRoot().getLeft().getLeft().getValue(), 15);
+        assertEquals(15, bst.getRoot().getLeft().getLeft().getValue());
     }
 
     @Test
@@ -58,7 +58,7 @@ public class BinarySearchTreeTest {
         bst.addElement(75);
         bst.addElement(92);
 
-        assertEquals(bst.getRoot().getRight().getRight().getValue(), 92);
+        assertEquals(92,bst.getRoot().getRight().getRight().getValue());
     }
 
     @Test
@@ -68,14 +68,14 @@ public class BinarySearchTreeTest {
         bst.addElement(40);
         bst.addElement(40);
 
-        assertEquals(bst.getRoot().getLeft().getValue(), 40);
+        assertEquals(40, bst.getRoot().getLeft().getValue());
     }
 
     @Test
     public void it_should_return_zero_for_min_on_an_empty_bst(){
         BinarySearchTree bst = new BinarySearchTree();
 
-        assertEquals(bst.min(), 0);
+        assertEquals(0, bst.min());
     }
 
     @Test
@@ -84,7 +84,7 @@ public class BinarySearchTreeTest {
 
         bst.addElement(25);
 
-        assertEquals(bst.min(), 25);
+        assertEquals(25, bst.min());
     }
 
     @Test
@@ -94,7 +94,7 @@ public class BinarySearchTreeTest {
         bst.addElement(25);
         bst.addElement(12);
 
-        assertEquals(bst.min(), 12);
+        assertEquals(12, bst.min());
     }
 
     @Test
@@ -109,14 +109,14 @@ public class BinarySearchTreeTest {
         bst.addElement(36);
         bst.addElement(75);
 
-        assertEquals(bst.min(), 5);
+        assertEquals(5, bst.min());
     }
 
     @Test
     public void it_should_return_zero_for_max_on_an_empty_bst(){
         BinarySearchTree bst = new BinarySearchTree();
 
-        assertEquals(bst.max(), 0);
+        assertEquals(0, bst.max());
     }
 
     @Test
@@ -125,7 +125,7 @@ public class BinarySearchTreeTest {
 
         bst.addElement(25);
 
-        assertEquals(bst.max(), 25);
+        assertEquals(25, bst.max());
     }
 
     @Test
@@ -135,7 +135,7 @@ public class BinarySearchTreeTest {
         bst.addElement(25);
         bst.addElement(36);
 
-        assertEquals(bst.max(), 36);
+        assertEquals(36, bst.max());
     }
 
     @Test
@@ -150,14 +150,14 @@ public class BinarySearchTreeTest {
         bst.addElement(36);
         bst.addElement(75);
 
-        assertEquals(bst.max(), 75);
+        assertEquals(75, bst.max());
     }
 
     @Test
     public void it_returns_the_correct_size_of_a_tree_with_no_values(){
         BinarySearchTree bst = new BinarySearchTree();
 
-        assertEquals(bst.size(), 0);
+        assertEquals(0, bst.size());
     }
 
     @Test
@@ -166,7 +166,7 @@ public class BinarySearchTreeTest {
 
         bst.addElement(5);
 
-        assertEquals(bst.size(), 1);
+        assertEquals(1, bst.size());
     }
 
     @Test
@@ -178,7 +178,7 @@ public class BinarySearchTreeTest {
         bst.addElement(12);
         bst.addElement(20);
 
-        assertEquals(bst.size(), 4);
+        assertEquals(4, bst.size());
     }
 
     @Test
