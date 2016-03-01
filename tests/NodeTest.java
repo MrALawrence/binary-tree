@@ -7,6 +7,6 @@ public class NodeTest {
     public void it_should_store_its_value() {
         Node n = new Node(5);
 
-        assertEquals(n.getValue(), 5);
+        assertEquals(5, n.getValue());
     }
 }
